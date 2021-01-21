@@ -1,0 +1,76 @@
+.chats {
+  position: relative;
+  height: 400px;
+  width: 260px;
+}
+
+.chats__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  height: 50px;
+  background-color: #059ee0;
+}
+
+.chats__avatar {
+  height: 25px !important;
+  width: 25px !important;
+  cursor: pointer;
+}
+
+.chats__search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 8px;
+}
+
+.chats__search > input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  flex: 1;
+  color: white;
+}
+
+.chats__search > input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.chats__chatIcon {
+  font-size: 20px !important;
+  color: white;
+}
+
+.chats__posts {
+  height: 359px;
+  margin-top: -9px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 1px -7px 7px -6px rgba(0, 0, 0, 0.44);
+  overflow: scroll;
+  background-color: white;
+}
+
+.chats__posts::-webkit-scrollbar {
+  display: none;
+}
+
+.chats__takePicIcon {
+  position: absolute;
+  border-radius: 200px;
+  font-size: 40px !important;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: gray;
+  background-color: white;
+}
+
+.chats__takePicIcon:hover {
+  opacity: 0.8;
+}
